@@ -30,7 +30,7 @@ if __name__ == '__main__':
     discrete_stopband_frequency = 2 * stopband_frequency / sample_frequency
     # 过渡带宽度
     max_transition_band = (discrete_passband_frequency - discrete_stopband_frequency) * np.pi
-    # remez length matlab中算出来的不对，这是试出来的
+    # 滤波器长度N matlab中(remezord)算出来的不对，这是试出来的
     remez_numtaps = 34
     # 椭圆滤波器
     filter_type = 'ellip'

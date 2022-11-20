@@ -4,14 +4,11 @@
 #  copies of this license document, and changing it is allowed as long
 #  as the name is changed.
 
-import matplotlib
 import numpy as np
 from scipy.signal import iirdesign, freqz, remez
 import matplotlib.pyplot as plt
-from matplotlib.font_manager import FontProperties
 
 if __name__ == '__main__':
-    font = FontProperties(fname="SimHei.ttf", size=14)
 
     # Fs
     sample_frequency = 80000
